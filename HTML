@@ -1,0 +1,42 @@
+
+<html>
+<head>
+  <title>Formulário</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    form {
+      width: 300px;
+      margin: 0 auto;
+    }
+    input[type="text"], input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Formulário Elaborado</h2>
+
+<form action="http://localhost:3000/rota" method="post">
+  <label for="fname">Nome:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Sobrenome:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  <input type="submit" value="Enviar">
+</form> 
+
+</body>
+</html>
